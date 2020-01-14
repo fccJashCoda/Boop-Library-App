@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Library</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Book Library</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Work in progress" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 disabled" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- JUMBOTRON -->
+
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="jumbtron-layer"></div>
+    <div class="container inner">
+      <h1 class="display-4">Book Library</h1>
+      <p class="lead">Keeping track of your offline book library has never been this easy!</p>
+      <a href="#" id="addABookBtn" class="btn btn-primary">Add a book to your library.</a>
+    </div>
+    
+  </div>
+
+  <div class="container" id="main-wrapper">
+    <hr>
+    <div class="card">
+      <div class="card-header text-white bg-primary mb-3">Your books</div>
+      <div class="card-body" id="library">
+
+        
+
+      </div>
+      <div class="card-footer">2 minutes ago (Work in progress)</div>
+    </div>
+    <hr>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>Copyright &copy;Book Library, 2020</p>
+  </footer>
+
+  <div class="background-layer"></div>
+  <!-- Modals -->
+  <!-- Add a book-->
+  <div id="addBookModal" class="card modal">
+    <div class="card-header text-white bg-primary mb-3">Add Book <span class="close">&times;</span></div>
+    <div class="card-body">
+      <form id="bookForm">
+        <div class="form-group">
+          <label class="label">Title</label>
+          <input type="text" class="form-control" id="bookTitle" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <label class="label">Author</label>
+          <input type="text" class="form-control" id="bookAuthor" placeholder="Author">
+        </div>
+        <div class="form-group">
+          <label class="label">N° of pages</label>
+          <input type="text" class="form-control" id="numOfPages" placeholder="pages">
+        </div>
+        <div class="form-group">
+          <label class="label">Read Status</label>
+          <select id="readStatus" class="form-control">
+            <option value="read">Read</option>
+            <option value="notRead">Not read</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="label">Description</label>
+          <input type="text" class="form-control" id="bookDescription" placeholder="A few words about the book">
+        </div>
+        <div class="form-group">
+          <label class="label">Book cover link</label>
+          <input type="text" class="form-control" id="bookCover" placeholder="Url to the books cover">
+        </div>
+        <a href="#" class="btn btn-primary" id="addToLibraryBtn">Add to library.</a>
+        <a href="#" class="btn btn-danger" id="cancelBookForm">Cancel</a>
+      </form>
+    </div>
+  </div>
+
+  <script></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="js\main.js"></script>
+</body>
+</html>

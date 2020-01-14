@@ -1,0 +1,83 @@
+/* GLOBALS */
+#main-wrapper {
+    margin-bottom: 7rem;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../images/pile-of-books1920.jpg') no-repeat center center!important;
+    background-size: cover !important;
+    color:#fff;
+}
+
+.jumbotron p {
+    font-weight: bold;
+}
+
+
+/* FOOTER*/
+#footer {
+    background:#343a40;
+    position: fixed;
+    text-align: center;
+    color:#fff;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+
+#footer p {
+    padding: 1rem 0;
+}
+
+/* MODAL */
+.background-layer {
+    display: none;
+    position:fixed;
+    background:rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    z-index:1;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 500px;
+    height: 700px;
+    overflow: auto;
+    margin: auto !important;
+    padding:0.5rem;
+    border-radius: 10px;
+    top:20%;
+    left:40%;
+}
+
+/* BOOK block */
+.book-inner {
+    display:flex;
+}
+
+.book-info-and-options {
+    display: flex;
+    flex-direction: column;
+    margin-left:1rem;
+}
+
+.book-description {
+    height:95px;
+    overflow: hidden;
+}
+.book-cover,
+.cover-image {
+    width:150px;
+    height:250px;
+}
+
+/* Buttons */
+.editBtn,
+.deleteBtn {
+    margin-left:0.3rem;
+}
